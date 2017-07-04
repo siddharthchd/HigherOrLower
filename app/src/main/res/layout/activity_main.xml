@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.siddh.highlow.MainActivity">
+
+    <EditText
+        android:id="@+id/guessText"
+        android:layout_width="279dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="296dp"
+        android:ems="10"
+        android:hint="Enter your Guess"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="138dp"
+        android:layout_marginTop="364dp"
+        android:onClick="guess"
+        android:text="Guess"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="314dp"
+        android:layout_height="175dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="-4dp"
+        android:text="Number Guess"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorHighlight="@android:color/background_light"
+        android:textDirection="ltr"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="303dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="11dp"
+        android:text="I am thinking of a number between 1 and 10."
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="265dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="230dp"
+        android:text="Can You Guess It?"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
